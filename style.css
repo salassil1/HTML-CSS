@@ -1,0 +1,153 @@
+body{
+    background: white;
+   
+}
+
+h1{
+    text-align: center;
+    color: dodgerblue; 
+    font-family:sans-serif;
+    font-size: 50px;
+    
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-family: serif;
+    font-size: 25px;
+}
+
+
+
+#header{
+border: none;
+border-radius: 40px 10px;
+background: gold;
+}
+
+#button{
+border: none;
+border-radius: 50px 50px;
+background: gold;
+
+
+    display: flex;
+	background-image: linear-gradient(to bottom, #7B9DCA, #7291BA);
+	padding: 20px 30px 20px 30px;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: row;
+	width: 60%;
+	flex-grow: 2;
+	justify-content: center;
+    
+}
+
+
+a{
+	color: black;
+	text-decoration: none;
+	padding: 0px 10px 0px 10px;
+	font-size: 1.25vw;
+	transition: 0.5s;
+}
+
+a:hover{
+	color: gold;
+	transform: scale(2);
+}
+
+
+
+#container{
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	background-color: cornflowerblue;
+	padding: 25px 25px 10px 25px;
+	border-radius: 10px;
+	width: 80%;
+}
+
+
+
+.focal-point{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 50%;
+  box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+    
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.product-card {
+    padding: .5%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    flex-flow: column;
+    display: flex; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: .5%;
+    text-align: center;
+    font-family: arial;
+    border-radius: 2%;
+    background-color:bisque;
+}
+
+.product-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+    width: 70%;
+ 
+}
+
+.product-info {
+    margin-top: auto;
+}
+
+
+.center-java {
+    padding: 1%;
+    flex-grow: 40;
+    flex-basis: 16%;
+    flex-flow: column;
+    display: 100; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+   margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 2%;
+    background-color:bisque;
+}
+
+.java-image img {
+     padding: 0%;
+    flex-grow: 20;
+    flex-basis: 10%;
+    flex-flow: column-reverse;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    width: 30%;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ 
+}
+

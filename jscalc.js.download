@@ -1,0 +1,54 @@
+function tipCalculator() {
+	/*varible for Bill input*/
+	var x = document.getElementById("bill").value;
+	/*Varible for tip percent amount*/
+	var y = document.getElementById("tipPct").value;
+	/*Varible for number of people*/
+	var z = document.getElementById("numPeople").value;
+	
+
+	/*If the varibles for the bill and tip are left blank it will
+	alert the user*/
+	if (x === "" || y === ""){
+		alert("One or more required fields is missing.");
+		return;
+	}
+	/*If the varible for people are left blank or is less than one
+	it will calclate as if it where for one person*/
+	if (z === "" || z <= 1){
+		z = 1;
+		var a = (x * (y/100) / z);
+		
+		/*Rounds to 2 decimal places*/
+		a = a.toFixed(2);
+		document.getElementById("tip").innerHTML = "Tip: $" + a;
+		/*transforms from string to number*/
+		var b = Number(a) + Number(x);
+		b = b.toFixed(2);
+		/*displays tip total to window for one person*/
+		document.getElementById("total").innerHTML = "Total with tip: $" + b;
+		} 
+	/*If the number of people is greater than on then it will calculate the 
+	tip for each and the total for each if they are splitting the bill*/
+	else {	
+		var a = x * (y/100) / z;
+		a = a.toFixed(2);
+		document.getElementById("tip").innerHTML = "Tip: $" + a + " each";
+		var totalBillEach = x / z;
+		totalBillEach = totalBillEach.toFixed(2);
+		var totalTipEach = a;
+		var c = Number(totalBillEach) + Number(totalTipEach);
+		c = c.toFixed(2);
+		var split = "Splitting Bill - "
+		 + " Total: $" + c + " each";
+		document.getElementById("total").innerHTML = split;
+	}
+}
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+};
